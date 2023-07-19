@@ -7,12 +7,16 @@ public class Exercise2 {
     public static void main(String[] args) throws IOException {
 
         // Use ReactiveSources.intNumbersFlux() and ReactiveSources.userFlux()
+        ReactiveSources.intNumbersFlux().subscribe(e -> System.out.println(e));
 
         // Print all numbers in the ReactiveSources.intNumbersFlux stream
         // TODO: Write code here
 
+
         // Print all users in the ReactiveSources.userFlux stream
         // TODO: Write code here
+
+        ReactiveSources.userFlux().subscribe(e -> System.out.println(e));
 
         System.out.println("Press a key to end");
         System.in.read();
